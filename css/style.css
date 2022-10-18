@@ -16,7 +16,7 @@ Author E-mail: naimlasker@gmail.com
 /*font Variables*/
 /*Color Variables*/
 /*=================== fonts ====================*/
-@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,600|Roboto:400,500,500i");
+/*@import url("https://fonts.googleapis.com/css?family=Rajdhani:400,600|Roboto:400,500,500i");*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /* Medium Layout: 1280px */
@@ -28,7 +28,8 @@ Author E-mail: naimlasker@gmail.com
 body {
   line-height: 24px;
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: "TT Norms Pro",sans-serif;
   font-weight: 100;
   color: #777777; }
 
@@ -38,8 +39,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 600; }
+  -webkit-font-smoothing: antialiased;
+  font-family: "TT Norms Pro",sans-serif;
+  line-height: 40px;
+  font-weight: 400; }
 
 .list {
   list-style: none;
@@ -96,15 +99,19 @@ button:focus {
     .main_title {
       margin-bottom: 40px; } }
   .main_title h2 {
-    font-family: "Rajdhani", sans-serif;
-    font-size: 36px;
-    color: #000;
-    font-weight: 600;
     margin-bottom: 15px;
-    text-transform: capitalize; }
+    margin-top: 0px;
+    -webkit-font-smoothing: antialiased;
+    font-family: "TT Norms Pro",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: #644a3c;
+    line-height: 49px;
+}
   .main_title p {
     font-size: 14px;
-    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-family: "TT Norms Pro",sans-serif;
     line-height: 24px;
     color: #777777;
     margin-bottom: 0px;
@@ -120,7 +127,7 @@ button:focus {
     letter-spacing: 2px;
     margin-bottom: 20px; }
   .cncf-logo{
-    width: 25rem;
+    width: 20rem;
   }
 
 /* End Main Title Area css
@@ -185,7 +192,7 @@ button:focus {
     background-image: -ms-linear-gradient(to right, #F77924 0%, #FFAE63 100%), -ms-radial-gradient(circle at top left, #F77924, #FFAE63);
     background-image: -o-linear-gradient(to right, #F77924 0%, #FFAE63 100%), -o-radial-gradient(circle at top left, #F77924, #FFAE63);
     color: #fff;
-    box-shadow: 0px 10px 30px rgba(130, 82, 250, 0.2);
+    box-shadow: 0px 10px 30px rgba(250, 146, 82, 0.2);
     border: 2px solid transparent; }
 
 .overlay {
@@ -218,10 +225,10 @@ button:focus {
     display: block;
     width: 60px;
     height: 60px;
-    background: -webkit-linear-gradient(90deg, black 0%, black 100%);
-    background: -moz-linear-gradient(90deg, black 0%, black 100%);
-    background: -o-linear-gradient(90deg, black 0%, black 100%);
-    background: linear-gradient(90deg, black 0%, black 100%);
+    background: -webkit-linear-gradient(90deg, #ff904d 0%, #ff904d 100%);
+    background: -moz-linear-gradient(90deg, #ff904d 0%, #ff904d 100%);
+    background: -o-linear-gradient(90deg, #fa9e53 0%, #ff904d 100%);
+    background: linear-gradient(90deg, #ff904d 0%, #fa9e53 100%);
     border-radius: 50%; }
   .video-play-button:before {
     z-index: 0;
@@ -326,9 +333,11 @@ button:focus {
     .header_area .navbar .nav .nav-item {
       margin-right: 45px; }
       .header_area .navbar .nav .nav-item .nav-link {
-        font: 500 12px/100px "Rajdhani", sans-serif;
-        text-transform: uppercase;
-        font-weight:500;
+        font: 500 14px/100px "TT Norms Pro",sans-serif;
+        -webkit-font-smoothing: antialiased;
+        font-family: "TT Norms Pro",sans-serif;
+        text-transform: initial;
+        font-weight:400;
         color: #000000;
         padding: 0px;
         display: inline-block; }
@@ -457,12 +466,12 @@ button:focus {
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
-  background: url(../img/banner/home-banner.png) no-repeat right center;
+  /*background: url(../img/banner/wave.svg) no-repeat right center;*/
   background-size: cover; }
   .home_banner_area .banner_inner {
     width: 100%; }
     .home_banner_area .banner_inner .home_right_img {
-      padding-top: 260px;
+      padding-top: 60px;
       padding-bottom: 142px; }
     .home_banner_area .banner_inner .col-lg-5 {
       vertical-align: middle;
@@ -471,23 +480,32 @@ button:focus {
       text-align: left;
       color: #fff; }
       .home_banner_area .banner_inner .banner_content h2 {
-        margin-top: 0px;
-        font-size: 65px;
-        font-weight: 900;
-        line-height: 54px;
+         margin-top: 0px;
+        -webkit-font-smoothing: antialiased;
+        font-family: "TT Norms Pro",sans-serif;
+        font-size: 30px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #644a3c;
+        line-height: 49px;
         margin-bottom: 20px; }
       .home_banner_area .banner_inner .banner_content p {
-        color: #fff;
+        -webkit-font-smoothing: antialiased;
+        font-family: "TT Norms Pro",sans-serif;
+        color: #876d5a;
         font-size: 20px;
-        margin-bottom: 20px; }
+        line-height: 25px;
+        margin-bottom: 0px; }
       .home_banner_area .banner_inner .banner_content .primary_btn {
-        border-color: #fff;
-        background: rgba(255, 255, 255, 0.1);
-        color: #fff;
+        border-color: #ff904d;
+        font-size: 14px;
+        text-transform: initial;
+        /*background: rgba(255, 255, 255, 0.1);*/
+        color: #ff904d;
         margin-right: 30px; }
         .home_banner_area .banner_inner .banner_content .primary_btn:hover {
-          background: #fff;
-          color: #222222; }
+          background: #ff904d;
+          color: #ffffff; }
       .home_banner_area .banner_inner .banner_content .watch_video {
         margin: 0 30px;
         font-size: 12px;
@@ -552,15 +570,19 @@ button:focus {
     .banner_area .banner_inner .banner_content h2 {
       color: #fff;
       font-size: 36px;
-      font-family: "Rajdhani", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-family: "TT Norms Pro",sans-serif;
       margin-bottom: 0px;
+      letter-spacing: 1px;
       text-transform: capitalize;
       font-weight: bold; }
-    .banner_content p{
-      font-family: "Rajdhani", sans-serif;
+    .banner_content p {
+      -webkit-font-smoothing: antialiased;
+      font-family: "TT Norms Pro",sans-serif;
     }
-    .banner_content a{
-      font-family: "Rajdhani", sans-serif;
+    .banner_content a {
+      -webkit-font-smoothing: antialiased;
+      font-family: "TT Norms Pro",sans-serif;
       font-size: 1.2rem;
       font-weight: bold;
     }
@@ -843,7 +865,7 @@ button:focus {
     font-weight: 600;
     transition: all 0.3s linear; }
     .blog_details h2:hover {
-      color: #8252fa; }
+      color: #fa9e52; }
   .blog_details p {
     margin-bottom: 26px; }
 
@@ -2739,10 +2761,11 @@ h6 {
       left: 0;
       top: -1px;
       font-size: 30px;
-      color: #222222; }
+      color: #ff904d; }
     .single_feature .feature_head h4 {
       font-size: 20px;
-      color: #222222;
+      color: #876d5a;
+      line-height: 30px;
       display: inline-block;
       padding-left: 60px; }
   .single_feature .feature_content p {
@@ -2753,7 +2776,7 @@ h6 {
 /* Recent Update Area css
 ============================================================================================ */
 .recent_update_area {
-  background-image: url(../img/tab-bg.jpg);
+  background-image: url(../img/tab-bg.png);
   background-size: cover;
   padding: 290px 0; }
   .recent_update_area.made_white {
@@ -2765,15 +2788,15 @@ h6 {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-right: -15px;
-  border-bottom: 1px solid #eda2f0;
+  border-bottom: 1px solid #ff9346;
   padding-bottom: 1px; }
   .recent_update_inner .nav.nav-tabs li {
     flex: 0 0 25%;
-    max-width: 195px;
-    padding: 0px 15px; }
+    /*max-width: 195px;*/
+    padding: 0px 10px; }
     .recent_update_inner .nav.nav-tabs li a {
       border: none;
-      padding: 25px 0px;
+      padding: 15px 0px;
       background: #fff;
       text-align: center;
       line-height: 60px;
@@ -2803,11 +2826,16 @@ h6 {
           -webkit-text-fill-color: transparent; }
     .recent_update_inner .nav.nav-tabs li h6 {
       letter-spacing: 1px;
+      text-transform: initial;
+      -webkit-font-smoothing: antialiased;
+      font-family: "TT Norms Pro",sans-serif;
+      font-size: 18px;
       margin-top: -10px;
       margin-bottom: 0; }
 .recent_update_inner .tab-content .tab-pane {
-  border: none;
-  padding-top: 80px; }
+       border: none;
+       padding-top: 80px;
+}
 
 .recent_update_text .col-lg-5 {
   vertical-align: middle;
@@ -2816,7 +2844,8 @@ h6 {
   color: #222222;
   line-height: 45px;
   font-size: 36px;
-  font-family: "Rajdhani", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: "TT Norms Pro",sans-serif;
   font-weight: bold;
   margin-bottom: 20px; }
 .recent_update_text h6 {
@@ -2845,7 +2874,8 @@ h6 {
 .common_style h3 {
   font-size: 36px;
   color: #222222;
-  font-family: "Rajdhani", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-family: "TT Norms Pro",sans-serif;
   margin-bottom: 20px; }
 .common_style p {
   margin: 0; }
@@ -2915,7 +2945,8 @@ h6 {
       font-size: 20px;
       color: #222222;
       margin-bottom: 0px;
-      font-family: "Rajdhani", sans-serif; }
+      -webkit-font-smoothing: antialiased;
+      font-family: "TT Norms Pro",sans-serif; }
   .price_item .price_body {
     padding: 30px 0px;
     background: #fff;
@@ -3087,7 +3118,8 @@ h6 {
     .impress_area .impress_inner h2 {
       color: #fff;
       font-size: 36px;
-      font-family: "Rajdhani", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      font-family: "TT Norms Pro",sans-serif;
       font-weight: bold;
       margin-bottom: 18px; }
     .impress_area .impress_inner p {
@@ -3226,7 +3258,6 @@ h6 {
   .header_area.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px;
     color: #fff; }
-
   .header_area.white_menu.navbar_fixed .main_menu .navbar .nav .nav-item .nav-link {
     line-height: 40px;
     color: #fff; }
@@ -3621,7 +3652,8 @@ h6 {
     color: #000;
     font-size: 20px;
     font-weight: bold;
-    font-family: "Rajdhani", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-family: "TT Norms Pro",sans-serif;
     margin-bottom: 0px; }
 
 .ab_widget p {
